@@ -66,7 +66,6 @@ $(document).ready(function(){
                 }
             }
             if(j>=(Number(curve)-Number(point))){
-                //console.log("count: "+count+" j: "+j);
                 var id = "#d"+count+"";
                 $(id).css({ backgroundColor:  newcolor(val)});
                 count++;
