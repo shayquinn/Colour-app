@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    //$("#num").val('');
     $("#button").click(function(){
         var num = $("#num").val();
         var point = $("#point").val();
@@ -34,11 +33,9 @@ $(document).ready(function(){
                 }
                 if(bullone===true){
                     val = (99.9/(halfcvrve))*tog;
-                    //console.log("tog1_ "+tog);
                     tog++;
                 }else if(bullone===false){
                     val = (99.9/(halfcvrve))*tog;
-                    //console.log("tog1_ "+tog);
                     tog--;
                 }
             }
@@ -48,26 +45,22 @@ $(document).ready(function(){
                 if(tog1 === 0){
                     bullone = true;
                     inbull = false;
-                   // console.log("brake : inbull: "+inbull );
                 }
                 else if(tog1 == (oodcurve)){
                     bullone = false;
                 }
                 if(bullone===true){
                     val = (99.9/(oodcurve))*tog1;
-                    //console.log("tog1: "+tog1);
                     tog1++;
                 }
                 if(bullone===false){
                     if(inbull === true){
                         val = (99.9/(oodcurve))*tog1;
-                       // console.log("tog1: "+tog1);
                         tog1--;
                     }
                     if(inbull === false){
                         val = (99.9/(oodcurve))*tog1;
                         tog2 = tog1;
-                        //console.log("tog1: "+tog1);
                         inbull = true;
                     }
                 }
